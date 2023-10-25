@@ -9,13 +9,13 @@
 body {
     padding: 16px;
     line-height: 1;
-    columns: rgb(0, 23, 50);
+    color: rgb(0, 23, 50);
     background-color: rgb(216, 238, 232);
     font-family: 'Darker Grotesque', sans-serif;
 }
 
 .game-container {
-    width: 484px;
+    width: calc((48px * 10) + 4px);
 }
 
 /* Pannello di gioco */
@@ -30,14 +30,15 @@ h1 {
 }
 
 /* Tabellone di gioco */
+
 .game-board {
     border: 2px solid rgb(0, 23, 50);
     position: relative;
 }
 
 .grid {
-    height: 480px;
-    width: 480px;
+    height: calc(48px * 10);
+    width: calc(48px * 10);
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -69,6 +70,8 @@ h1 {
     cursor: not-allowed;
 }
 
+/* Schermata di fine gioco */
+
 .end-game-screen {
     background-color: rgba(241, 117, 78, 0.6);
     position: absolute;
@@ -80,6 +83,7 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-transform: uppercase;
 }
 
 .win {
@@ -90,7 +94,6 @@ h1 {
     font-size: 48px;
     font-family: 'Press Start 2P', sans-serif;
     line-height: 1.2;
-    text-transform: uppercase;
     margin-bottom: 16px;
 }
 
@@ -98,9 +101,9 @@ button {
     border: 2px solid rgb(0, 23, 50);
     font-size: 24px;
     font-family: 'Darker Grotesque', sans-serif;
-    text-transform: uppercase;
     padding: 4px 20px 8px 20px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 button:hover {
