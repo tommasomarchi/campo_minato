@@ -22,8 +22,9 @@ while (bombsList.length < totalBombs) {
     if (!bombsList.includes(number)) {
         bombsList.push(number);
     }
-    bombsList.sort();
 }
+
+console.log(bombsList);
 
 /* -----------------------------------
 GRIGLIA E LOGICA DI GIOCO
